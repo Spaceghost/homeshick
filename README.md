@@ -1,4 +1,4 @@
-homeshick [![Build Status](https://travis-ci.org/andsens/homeshick.png?branch=development)](https://travis-ci.org/andsens/homeshick)
+homeshick [![Build Status](https://travis-ci.org/Spaceghost/homeshick.png?branch=development)](https://travis-ci.org/Spaceghost/homeshick)
 =========
 In Unix, configuration files are king.  
 Tailoring tools to suit your needs through configuration can be empowering.  
@@ -15,23 +15,23 @@ homeshick can handle multiple dotfile repositories. This means that you can inst
 larger frameworks like [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 or a multitude of emacs or vim plugins alongside your own customizations without clutter.
 
-For detailed [installation instructions](https://github.com/andsens/homeshick/wiki/Installation), [tutorials](https://github.com/andsens/homeshick/wiki/Tutorials) and [tips](https://github.com/andsens/homeshick/wiki/Automatic-deployment) & [tricks](https://github.com/andsens/homeshick/wiki/Symlinking) have a look at the [wiki](https://github.com/andsens/homeshick/wiki).
+For detailed [installation instructions](https://github.com/Spaceghost/homeshick/wiki/Installation), [tutorials](https://github.com/Spaceghost/homeshick/wiki/Tutorials) and [tips](https://github.com/Spaceghost/homeshick/wiki/Automatic-deployment) & [tricks](https://github.com/Spaceghost/homeshick/wiki/Symlinking) have a look at the [wiki](https://github.com/Spaceghost/homeshick/wiki).
 
 Quick install
 -------------
 
 homeshick is installed to your own home directory and does not require root privileges to be installed.
 ```sh
-git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
+git clone git://github.com/Spaceghost/homeshick.git $HOMESICK_DIR/repos/homeshick
 ```
 *Note: If you'd like to help testing new features before they are released use `git clone --branch testing git://...`*
 
 To invoke homeshick, source the `homeshick.sh` script from your rc-script:
 ```sh
 # from sh and its derivates (bash, zsh etc.) 
-printf '\nsource "$HOME/.homesick/repos/homeshick/homeshick.sh"' >> $HOME/.bashrc
+printf '\nsource "$HOMESICK_DIR/repos/homeshick/homeshick.sh"' >> $HOME/.bashrc
 # fish shell
-echo \n'source "$HOME/.homesick/repos/homeshick/homeshick.fish"' >> "$HOME/.config/fish/config.fish"
+echo \n'source "$HOMESICK_DIR/repos/homeshick/homeshick.fish"' >> "$HOME/.config/fish/config.fish"
 ```
 
 Contributing
